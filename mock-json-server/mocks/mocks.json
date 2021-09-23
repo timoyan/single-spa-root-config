@@ -1,0 +1,16 @@
+[
+  {
+    "id": "base",
+    "routesVariants": ["add-headers:enabled", "get-import-map-v1:success", "get-import-map-v2:success"]
+  },
+  {
+    "id": "no-headers",
+    "from": "base",
+    "routesVariants": ["add-headers:disabled"]
+  },
+  {
+    "id": "user-real",
+    "from": "no-headers",
+    "routesVariants": ["get-user:real"]
+  }
+]
